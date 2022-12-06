@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Russo One" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet" />
+        <!--End Fonts-->
+
+        <!--CSS File-->
+        <link rel="stylesheet" href="css/main.css" />
+        <!--End CSS-->
+
+    </head>
+
+    <body>
+        <!--We can change the h2 context later-->
+        <h1>
+            Sign Up Page
+        </h1>
+
+        <form action="sign_up.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" placeholder="patrick123" name="username" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="123@gmail.com" name="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Minimum 6 Characters Required" name="password" required><br>
+
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" placeholder="Enter Password Again" name="confirmpassword" required>
+            <br>
+
+            <div>
+                <button class="button" type="submit">Sign Up</button>
+                <button class="button" type="reset">Reset</button>
+                <button class="button"><a href="index.html">Back To Login In</a></button>
+            </div>
+        </form>
+
+
+        <footer>
+            Copyright &copy 2022 Emoji Mayhem. All right reserved.
+        </footer>
+    </body>
+
+</html>

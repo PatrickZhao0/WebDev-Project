@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Russo One" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet" />
+        <!--End Fonts-->
+
+        <!--CSS File-->
+        <link rel="stylesheet" href="css/main.css" />
+        <!--End CSS-->
+
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="start_game.html">Play</a>
+            <a href="search.html">Search Emoji</a>
+            <a href="shopping_cart.html">Shopping Cart</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="index.html">Log Out</a>
+        </nav>
+
+        <h1>Shopping Cart</h1>
+
+        <div class="budget">
+            <label for="budget">Your Budget $</label>
+            <input type="number" name="budget" class="budget_num" readonly>
+        </div>
+
+        <div class="shopping_cart">
+            <div class="shopping_item" style="border: solid thin;">
+                <p class="product_emoji">&#128512</p>
+                <p class="product_name">Name</p>
+                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Quantity:</label><input type="number" class="product_quantity"><br>
+                <label>Subtotal: $</label><input type="number" value="0.00" readonly>
+            </div>
+
+            <div class="shopping_item" style="border: solid thin;">
+                <p class="product_emoji">&#128512</p>
+                <p class="product_name">Name</p>
+                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Quantity:</label><input type="number" class="product_quantity"><br>
+                <label>Subtotal: $</label><input type="number" value="0.00" readonly>
+            </div>
+
+            <div class="shopping_item" style="border: solid thin;">
+                <p class="product_emoji">&#128512</p>
+                <p class="product_name">Name</p>
+                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Quantity:</label><input type="number" class="product_quantity"><br>
+                <label>Subtotal: $</label><input type="number" value="0.00" readonly>
+            </div>
+ 
+            <div class="shopping_item" style="border: solid thin;">
+                <p class="product_emoji">&#128512</p>
+                <p class="product_name">Name</p>
+                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Quantity:</label><input type="number" class="product_quantity"><br>
+                <label>Subtotal: $</label><input type="number" value="0.00" readonly>
+            </div>
+
+            <div class="shopping_item" style="border: solid thin;">
+                <p class="product_emoji">&#128512</p>
+                <p class="product_name">Name</p>
+                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Quantity:</label><input type="number" class="product_quantity"><br>
+                <label>Subtotal: $</label><input type="number" value="0.00" readonly>
+            </div>
+
+            <div class="shopping_item" style="border: solid thin;">
+                <p class="product_emoji">&#128512</p>
+                <p class="product_name">Name</p>
+                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Quantity:</label><input type="number" class="product_quantity"><br>
+                <label>Subtotal: $</label><input type="number" value="0.00" readonly>
+            </div>
+
+            <div class="shopping_item" style="border: solid thin;">
+                <p class="product_emoji">&#128512</p>
+                <p class="product_name">Name</p>
+                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Quantity:</label><input type="number" class="product_quantity"><br>
+                <label>Subtotal: $</label><input type="number" value="0.00" readonly>
+            </div>
+
+            <div class="shopping_item" style="border: solid thin;">
+                <p class="product_emoji">&#128512</p>
+                <p class="product_name">Name</p>
+                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Quantity:</label><input type="number" class="product_quantity"><br>
+                <label>Subtotal: $</label><input type="number" value="0.00" readonly>
+            </div>
+
+            <div class="shopping_item" style="border: solid thin;">
+                <p class="product_emoji">&#128512</p>
+                <p class="product_name">Name</p>
+                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Quantity:</label><input type="number" class="product_quantity"><br>
+                <label>Subtotal: $</label><input type="number" value="0.00" readonly>
+            </div>
+
+            <label>Total:</label><input type="number" id="total">
+        </div>
+
+        <div class="check_out">
+            <h2>Payment Information</h2>
+            <form action="product.php" method="post">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" required> <br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required> <br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" required> <br>
+
+                <label for="credit">Credit Number:</label>
+                <input type="number" name="credit" required>
+
+                <label for="sec_code">Security Code:</label>
+                <input type="number" name="sec_code" required> <br>
+
+                <label for="address">Address:</label>
+                <input type="text" name="address" required>
+
+                <label for="zip">Zipcode:</label>
+                <input type="number" name="zip" required> <br>
+
+                <input type="submit" class="button" value="Check Out">
+                <input type="reset">
+            </form>
+        </div>
+
+        <div class="radio_station">
+            <button class="last_song" style="padding: 0; border: 0; background-color: transparent;">&#9194</button>
+            <button class="stop_song" style="padding: 0; border: 0; background-color: transparent;">⏯️</button>
+            <button class="next_song" style="padding: 0; border: 0; background-color: transparent;">&#9193</button>
+        </div>
+
+        <footer>
+            Copyright &copy 2022 Emoji Mayhem. All right reserved.
+        </footer>
+    </body>
+
+</html>

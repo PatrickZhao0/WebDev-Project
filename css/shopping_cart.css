@@ -14,7 +14,7 @@
 .product_emoji{
     font-size:2cm;
 }
-.unitPrice{
+.unitPrice, .subtotal{
     background-color: #F5CCE8;
     border-top-style: hidden;
     border-right-style: hidden;

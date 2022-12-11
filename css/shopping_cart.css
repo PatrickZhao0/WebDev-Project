@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 800px) {
     .check_out, .payment_info{
-        margin-left: 15vw;
-        margin-right: 15vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
     }
 }

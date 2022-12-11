@@ -1,13 +1,46 @@
+.shopping_item{
+    text-align: center;
+    flex: 33.33%;
+}
+.shopping_cart{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 5%;
+}
+
+.product_emoji{
+    font-size:2cm;
+}
+.unitPrice{
+    background-color: #F5CCE8;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+.product_name{
+    font-size:1cm;
+}
+.info{
+    text-align: left;
+    padding-left: 25%;
+}
+
 .check_out{
     background-color: aliceblue;
-    margin-left: 4%;
-    margin-right:4%;
+    margin-left: 30%;
+    margin-right:30%;
     border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 
   .payment_info{
     text-align: left;
-    margin-left: 38%;
+    margin-left: 20%;
     display: flex;
     justify-content: start;
   }
@@ -38,3 +71,10 @@
   .adress-1{
     margin-left: 9%;
   }
+
+@media screen and (max-width: 800px) {
+    .check_out, .payment_info{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}

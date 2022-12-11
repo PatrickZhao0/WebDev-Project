@@ -6,69 +6,57 @@
     <meta name="viewport" content="initial-scale=1" />
 
     <!--Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Russo One"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Hind"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Russo One" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet" />
     <!--End Fonts-->
 
     <!--CSS File-->
     <link rel="stylesheet" href="css/style.css" />
     <!--End CSS-->
  
-    <head>
-   
+    <style>
+      .login_container{
+          display: grid;
+          justify-content: center;
+          border: 3px;
+          border-color: pink;
+          margin: auto;
+      }
+    </style>
   </head>
 
   <body>
-
-
-    <h1>Log In Page</h1>
-    <center>
-      <h2>Sign up or log in!</h2>
-
-      <h2 id="song-title"></h2>
+      
+    <h2 id="song-title"></h2>
 
       <div class="login_container">
+        <h1>Log In</h1>
         <form action="login.php" method="post">
-          <label for="username">Username:</label>
-          <input
-            type="text"
-            placeholder="patrick123"
-            name="username"
-            required
-          /><br />
-
-          <label for="password">Password:</label>
-          <input
-            type="password"
-            placeholder="Minimum 6 Characters Required"
-            name="password"
-            required
-          /><br />
 
           <div>
-            <button class="button" type="submit">Submit</button>
-            <button class="button" type="reset">Reset</button>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="patrick123" name="username" required/>
+          </div>
+          <br/>
+
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Minimum 6 Characters Required" name="password"  required/>
+          </div>
+          <br />
+
+          <div>
+            <input class="button" type="submit"></input>
+            <input class="button" type="reset"></input>
           </div>
         </form>
-      </div>
-      <button><a href="signup.html">Sign Up</a></button>
-    </center>
 
-    
-    <center>
-      <h2 id="title">
-        Now Playing: 
-      </h2>
-      </center>
-     
+        <h2>Don't Have an Account?</h2><a href="signup.html"> <button class="button">Sign Up</button></a>
+      </div>
       
-      <center>
+
+      <h2 id="title"> Now Playing: </h2>
+      
       <audio controls autoplay >
         <source a;
           alt="Renaissance - Cristobal Tapia De Veer"
@@ -81,15 +69,7 @@
           type="audio/mpeg"
         />
       </audio>
-    </center>
 
-    <p>
-      things to do: <br>
-      make a button that plays next song <br>
-      when song plays display title + artist using js <br>
-      fix form alignment padding etc  <br> 
-      and include an interesting onload graphic
-    </p>
     <footer>Copyright &copy 2022 Emoji Mayhem. All right reserved.</footer>
   </body>
 </html>

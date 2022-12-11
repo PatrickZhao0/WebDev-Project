@@ -35,14 +35,28 @@
         color: aliceblue;
         border-color: rgb(69, 69, 210);
         border-radius: 100px;
-        width: 14cm;
+        width: 28vw;
       }
 
       #loginButton:hover{
         background-color: #8A4FFF;
         border-color: #8A4FFF;
       }
+      
+      .inputValue{
+        width: 28vw;
+      }
 
+      @media screen and (max-width: 800px) {
+            .container{
+                margin-left: 15vw;
+                margin-right: 15vw;
+            }
+
+            .inputValue, #loginButton{
+                width: 50vw;
+            }
+        }
     </style>
   </head>
 
@@ -55,19 +69,19 @@
 
           <div>
             <!-- <label for="username">Username:</label><br> -->
-            <input type="text" placeholder="Username" name="username" size="60" required/>
+            <input class="inputValue" type="text" placeholder="Username" name="username" required/>
           </div>
           <br/>
 
           <div>
             <!-- <label for="password">Password:</label><br> -->
-            <input type="password" placeholder="Password" name="password" size="60"  required/>
+            <input class="inputValue" type="password" placeholder="Password" name="password"  required/>
           </div>
           <br />
 
           <div>
-            <button class="button" type="submit" id="loginButton">Login</button><br><br>
-            <button class="button" type="reset" id="loginButton">Reset</button>
+            <input class="button" type="submit" id="loginButton" value="Login"></input><br><br>
+            <input class="button" type="reset" id="loginButton" value="Reset"></input>
           </div>
         </form>
         <br>
@@ -76,8 +90,6 @@
       </div>
     </div>
 
-      <h2 id="title"> Now Playing: </h2>
-
-    <footer>Copyright &copy 2022 Emoji Mayhem. All right reserved.</footer>
+    <footer style="text-align: center; margin-top: 10px;">Copyright &copy 2022 Emoji Mayhem. All right reserved.</footer>
   </body>
 </html>

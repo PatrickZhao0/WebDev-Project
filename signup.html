@@ -20,8 +20,8 @@
         .container{
           background-color: aliceblue;
           margin-top: 5%;
-          margin-left: 33%;
-          margin-right: 33%;
+          margin-left: 33vw;
+          margin-right: 33vw;
           padding-top: 3%;
           padding-bottom: 6%;
           text-align: center;
@@ -37,14 +37,27 @@
           color: aliceblue;
           border-color: rgb(69, 69, 210);
           border-radius: 100px;
-          width: 14cm;
+          width: 28vw;
         }
 
         #loginButton:hover{
             background-color: #8A4FFF;
             border-color: #8A4FFF;
         }
-  
+
+        .inputValue{
+            width: 28vw;
+        }
+        @media screen and (max-width: 800px) {
+            .container{
+                margin-left: 15vw;
+                margin-right: 15vw;
+            }
+
+            .inputValue, #loginButton{
+                width: 50vw;
+            }
+        }
       </style>
 
     <body>
@@ -57,25 +70,25 @@
             <form action="#" method="post">
                 <div>
                     <!--<label for="username">Username:</label>-->
-                    <input type="text" placeholder="Username" name="username" size="60" required>
+                    <input class="inputValue" type="text" placeholder="Username" name="username" required>
                 </div>
                 <br>
     
                 <div>
                     <!--<label for="email">Email:</label>-->
-                    <input type="email" placeholder="Email" name="email" size="60" required>
+                    <input  class="inputValue" type="email" placeholder="Email" name="email" required>
                 </div>
                <br>
     
                 <div>
                     <!--<label for="password">Password:</label>-->
-                    <input type="password" placeholder="Password (Minimum 6 Characters Required)" name="password" size="60" required>
+                    <input  class="inputValue" type="password" placeholder="Password (Minimum 6 Characters Required)" name="password" required>
                 </div>
                 <br>
     
                 <div>
                     <!--<label for="confirmpassword">Confirm Password:</label>-->
-                    <input type="password" placeholder="Enter Password Again" name="confirmpassword" size="60" required>
+                    <input  class="inputValue" type="password" placeholder="Enter Password Again" name="confirmpassword" required>
                 </div>
                 <br>
     
@@ -90,7 +103,7 @@
             
         </div>
         <script src="js/signUpValidate.js"></script>
-        <footer>
+        <footer style="text-align: center; margin-top: 10px;">
             Copyright &copy 2022 Emoji Mayhem. All right reserved.
         </footer>
     </body>

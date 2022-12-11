@@ -12,6 +12,8 @@
 
 .column2{
     grid-area: column2;
+    display: flex;
+    justify-content: start;
     padding-top: 4.5cm;
     padding-left: 7cm;
 }

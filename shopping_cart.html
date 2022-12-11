@@ -20,7 +20,6 @@
     <style>
         .shopping_item{
             text-align: center;
-            margin-bottom: 2%;
             padding-bottom: 2%;
         }
         .shopping_cart{
@@ -32,6 +31,14 @@
         .product_emoji{
             font-size:2cm;
         }
+        .unitPrice{
+            background-color: #F5CCE8;
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;
+        }
+
     </style>
     <body>
 
@@ -54,7 +61,7 @@
             <div class="shopping_item">
                 <p class="product_emoji">🥶</p>
                 <p class="product_name">Ice Man</p>
-                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Unit Price: $</label><input class="unitPrice" type="number" value="7" readonly><br>
                 <label>Quantity:</label><input type="number" class="product_quantity"><br>
                 <label>Subtotal: $</label><input type="number" value="0.00" readonly>
             </div>
@@ -62,7 +69,7 @@
             <div class="shopping_item" >
                 <p class="product_emoji">🦄</p>
                 <p class="product_name">Unicorn</p>
-                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Unit Price: $</label><input class="unitPrice" type="number" value="10" readonly><br>
                 <label>Quantity:</label><input type="number" class="product_quantity"><br>
                 <label>Subtotal: $</label><input type="number" value="0.00" readonly>
             </div>
@@ -70,7 +77,7 @@
             <div class="shopping_item" >
                 <p class="product_emoji">😇</p>
                 <p class="product_name">Angel</p>
-                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Unit Price: $</label><input class="unitPrice" type="number" value="5" readonly><br>
                 <label>Quantity:</label><input type="number" class="product_quantity"><br>
                 <label>Subtotal: $</label><input type="number" value="0.00" readonly>
             </div>
@@ -78,7 +85,7 @@
             <div class="shopping_item" >
                 <p class="product_emoji">🍒</p>
                 <p class="product_name">Cherries</p>
-                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Unit Price: $</label><input class="unitPrice" type="number" value="3" readonly><br>
                 <label>Quantity:</label><input type="number" class="product_quantity"><br>
                 <label>Subtotal: $</label><input type="number" value="0.00" readonly>
             </div>
@@ -86,7 +93,7 @@
             <div class="shopping_item" >
                 <p class="product_emoji">🐣</p>
                 <p class="product_name">Chick</p>
-                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Unit Price: $</label><input class="unitPrice" type="number" value="6" readonly><br>
                 <label>Quantity:</label><input type="number" class="product_quantity"><br>
                 <label>Subtotal: $</label><input type="number" value="0.00" readonly>
             </div>
@@ -94,7 +101,7 @@
             <div class="shopping_item" >
                 <p class="product_emoji">🔨</p>
                 <p class="product_name">Hammer</p>
-                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Unit Price: $</label><input class="unitPrice" type="number" value="4" readonly><br>
                 <label>Quantity:</label><input type="number" class="product_quantity"><br>
                 <label>Subtotal: $</label><input type="number" value="0.00" readonly>
             </div>
@@ -102,7 +109,7 @@
             <div class="shopping_item" >
                 <p class="product_emoji">🍕</p>
                 <p class="product_name">Pizza</p>
-                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Unit Price: $</label><input class="unitPrice" type="number" value="2" readonly><br>
                 <label>Quantity:</label><input type="number" class="product_quantity"><br>
                 <label>Subtotal: $</label><input type="number" value="0.00" readonly>
             </div>
@@ -110,7 +117,7 @@
             <div class="shopping_item" >
                 <p class="product_emoji">📀</p>
                 <p class="product_name">CD</p>
-                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Unit Price: $</label><input class="unitPrice" type="number" value="8" readonly><br>
                 <label>Quantity:</label><input type="number" class="product_quantity"><br>
                 <label>Subtotal: $</label><input type="number" value="0.00" readonly>
             </div>
@@ -118,7 +125,7 @@
             <div class="shopping_item" >
                 <p class="product_emoji">🔊</p>
                 <p class="product_name">Speaker</p>
-                <label>Unit Price: $</label><input type="number" value="0.00" readonly><br>
+                <label>Unit Price: $</label><input class="unitPrice" type="number" value="9" readonly><br>
                 <label>Quantity:</label><input type="number" class="product_quantity"><br>
                 <label>Subtotal: $</label><input type="number" value="0.00" readonly>
             </div>

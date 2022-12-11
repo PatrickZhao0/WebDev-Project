@@ -37,7 +37,7 @@
                 <div class="info">
                     <label>Unit Price: $</label><input class="unitPrice" type="number" value="7" readonly><br>
                     <label>Quantity: </label><input type="number" class="product_quantity"><br>
-                    <label>Subtotal: $</label><input class="unitPrice" type="number" value="0.00" readonly>
+                    <label>Subtotal: $</label><input class="subtotal" type="number" value="0.00" readonly>
                 </div>
             </div>
 
@@ -47,7 +47,7 @@
                 <div class="info">
                     <label>Unit Price: $</label><input class="unitPrice" type="number" value="10" readonly><br>
                     <label>Quantity: </label><input type="number" class="product_quantity"><br>
-                    <label>Subtotal: $</label><input class="unitPrice" type="number" value="0.00" readonly>
+                    <label>Subtotal: $</label><input class="subtotal" type="number" value="0.00" readonly>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
                 <div class="info">
                     <label>Unit Price: $</label><input class="unitPrice" type="number" value="5" readonly><br>
                     <label>Quantity: </label><input type="number" class="product_quantity"><br>
-                    <label>Subtotal: $</label><input class="unitPrice" type="number" value="0.00" readonly>
+                    <label>Subtotal: $</label><input class="subtotal" type="number" value="0.00" readonly>
                 </div>
             </div>
  
@@ -67,7 +67,7 @@
                 <div class="info">
                     <label>Unit Price: $</label><input class="unitPrice" type="number" value="3" readonly><br>
                     <label>Quantity: </label><input type="number" class="product_quantity"><br>
-                    <label>Subtotal: $</label><input class="unitPrice" type="number" value="0.00" readonly>
+                    <label>Subtotal: $</label><input class="subtotal" type="number" value="0.00" readonly>
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
                 <div class="info">
                     <label>Unit Price: $</label><input class="unitPrice" type="number" value="6" readonly><br>
                     <label>Quantity: </label><input type="number" class="product_quantity"><br>
-                    <label>Subtotal: $</label><input class="unitPrice" type="number" value="0.00" readonly>
+                    <label>Subtotal: $</label><input class="subtotal" type="number" value="0.00" readonly>
                 </div>
             </div>
 
@@ -87,7 +87,7 @@
                 <div class="info">
                     <label>Unit Price: $</label><input class="unitPrice" type="number" value="4" readonly><br>
                     <label>Quantity: </label><input type="number" class="product_quantity"><br>
-                    <label>Subtotal: $</label><input class="unitPrice" type="number" value="0.00" readonly>
+                    <label>Subtotal: $</label><input class="subtotal" type="number" value="0.00" readonly>
                 </div>
             </div>
 
@@ -97,7 +97,7 @@
                 <div class="info">
                     <label>Unit Price: $</label><input class="unitPrice" type="number" value="2" readonly><br>
                     <label>Quantity: </label><input type="number" class="product_quantity"><br>
-                    <label>Subtotal: $</label><input class="unitPrice" type="number" value="0.00" readonly>
+                    <label>Subtotal: $</label><input class="subtotal" type="number" value="0.00" readonly>
                 </div>
             </div>
 
@@ -107,7 +107,7 @@
                 <div class="info">
                     <label>Unit Price: $</label><input class="unitPrice" type="number" value="8" readonly><br>
                     <label>Quantity: </label><input type="number" class="product_quantity"><br>
-                    <label>Subtotal: $</label><input class="unitPrice" type="number" value="0.00" readonly>
+                    <label>Subtotal: $</label><input class="subtotal" type="number" value="0.00" readonly>
                 </div>
             </div>
 
@@ -117,7 +117,7 @@
                 <div class="info">
                     <label>Unit Price: $</label><input class="unitPrice" type="number" value="9" readonly><br>
                     <label>Quantity: </label><input type="number" class="product_quantity"><br>
-                    <label>Subtotal: $</label><input class="unitPrice" type="number" value="0.00" readonly>
+                    <label>Subtotal: $</label><input class="subtotal" type="number" value="0.00" readonly>
                 </div>
             </div>
         </div>
@@ -137,39 +137,39 @@
                     <div class="names">
                         <div>
                             <label for="fname">First Name:</label><br>
-                            <input type="text" name="fname" required> <br>
+                            <input type="text" name="fname"> <br>
                         </div>
                         <div class="names-1">
                             <label for="lname">Last Name:</label><br>
-                            <input type="text" name="lname" required> <br>
+                            <input type="text" name="lname"> <br>
                         </div>        
                     </div>
 
                     <label for="email">Email:</label><br>
-                    <input type="email" name="email" size="50" required> <br>
+                    <input type="text" name="email" size="50"> <br>
     
                     <label for="phone">Phone:</label><br>
-                    <input type="tel" name="phone" size="50" required> <br>
+                    <input type="tel" name="phone" size="50"> <br>
                     
                     <div class="creditcard">
                         <div>
                             <label for="credit">Credit Number:</label><br>
-                            <input type="number" name="credit" required>
+                            <input type="number" name="credit">
                         </div>
                         <div class="creditcard-1">
                             <label for="sec_code">Security Code:</label><br>
-                            <input type="number" name="sec_code" required> <br>
+                            <input type="number" name="sec_code"> <br>
                         </div>
                     </div>
 
                     <div class="address">
                         <div>
                             <label for="address">Address:</label><br>
-                            <input type="text" name="address" required><br>
+                            <input type="text" name="address"><br>
                         </div>
                         <div class="adress-1">
                             <label for="zip">Zipcode:</label><br>
-                            <input type="number" name="zip" width="100" required> <br>
+                            <input type="number" name="zip" width="100"> <br>
                         </div>
                     </div>
 
@@ -181,12 +181,7 @@
             </div>
         </div>
 
-
-        <div class="radio_station">
-            <button class="last_song" style="padding: 0; border: 0; background-color: transparent;">&#9194</button>
-            <button class="stop_song" style="padding: 0; border: 0; background-color: transparent;">⏯️</button>
-            <button class="next_song" style="padding: 0; border: 0; background-color: transparent;">&#9193</button>
-        </div>
+        <script src="js/shoppingCart.js"></script>
 
         <footer>
             Copyright &copy 2022 Emoji Mayhem. All right reserved.

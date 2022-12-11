@@ -21,15 +21,18 @@
     
     label, input {
     vertical-align: middle;
-  }
+    }
     
     .grid {
-  font-size: 3em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-    grid-gap: .03em;
-}
+         font-size: 3em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+         grid-gap: .03em;
+    }
+    .check_out{
+        margin: auto auto;
+    }
 </style>
 
     <body>
@@ -43,28 +46,24 @@
         </nav>
 
         <h1>Shopping Cart</h1>
-<center><div class="budget">
-            <label for="budget">Your Budget $</label>
-            <input type="number" name="budget" class="budget_num" readonly>
-        </div></center>
+            <div class="budget">
+                <label for="budget">Your Budget $</label>
+                <input type="number" name="budget" class="budget_num" readonly>
+            </div>
 
-        
-<center>
         <div class="grid">
-  <p>🥶 $7 <br> Ice man</p>
-  <p>🦄 $10 <br> Unicorn</p>
-  <p>😇 $5<br> Angel</p>
-  <p>🍒 $3<br> Cherries</p>
-  <p>🐣 $6<br> Chick</p>
-  <p>🔨 $4<br> Hammer</p>
-  <p>🍕 $2<br> Pizza</p>
-  <p>📀 $8<br> CD</p>
-  <p>🔊 $9 <br> Speakers</p>
-</div>
-</center>
-      
-<center>
+            <p>🥶 $7 <br> Ice man</p>
+            <p>🦄 $10 <br> Unicorn</p>
+            <p>😇 $5<br> Angel</p>
+            <p>🍒 $3<br> Cherries</p>
+            <p>🐣 $6<br> Chick</p>
+            <p>🔨 $4<br> Hammer</p>
+            <p>🍕 $2<br> Pizza</p>
+            <p>📀 $8<br> CD</p>
+            <p>🔊 $9 <br> Speakers</p>
+        </div>
 
+    
         <div class="check_out">
             <h2>Payment Information</h2>
             <form action="product.php" method="post">
@@ -93,11 +92,9 @@
                 <input type="number" name="zip" required> <br>
 
                 <input type="submit" class="button" value="Check Out">
-                <input type="reset">
+                <input type="reset" class="button">
             </form>
         </div>
-        
-        </center>
 
         <div class="radio_station">
             <button class="last_song" style="padding: 0; border: 0; background-color: transparent;">&#9194</button>

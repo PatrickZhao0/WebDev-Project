@@ -14,36 +14,55 @@
         <!--CSS File-->
         <link rel="stylesheet" href="css/style.css" />
         <!--End CSS-->
-
     </head>
+
+    <style>
+        .signup_container{
+            display: grid;
+            justify-content: center;
+        }
+    </style>
 
     <body>
         <!--We can change the h2 context later-->
         <h1>
-            Sign Up Page
+            Sign Up
         </h1>
 
-        <form action="sign_up.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" placeholder="patrick123" name="username" required><br>
-
-            <label for="email">Email:</label>
-            <input type="email" placeholder="123@gmail.com" name="email" required><br>
-
-            <label for="password">Password:</label>
-            <input type="password" placeholder="Minimum 6 Characters Required" name="password" required><br>
-
-            <label for="confirmpassword">Confirm Password:</label>
-            <input type="password" placeholder="Enter Password Again" name="confirmpassword" required>
-            <br>
-
-            <div>
-                <button class="button" type="submit">Sign Up</button>
-                <button class="button" type="reset">Reset</button>
-                <button class="button"><a href="index.html">Back To Login In</a></button>
-            </div>
-        </form>
-
+        <div class="signup_container">
+            <form action="sign_up.php" method="post">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" placeholder="patrick123" name="username" required>
+                </div>
+                <br>
+    
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="123@gmail.com" name="email" required>
+                </div>
+               <br>
+    
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="Minimum 6 Characters Required" name="password" required>
+                </div>
+                <br>
+    
+                <div>
+                    <label for="confirmpassword">Confirm Password:</label>
+                    <input type="password" placeholder="Enter Password Again" name="confirmpassword" required>
+                </div>
+                <br>
+    
+                <div>
+                    <button class="button" type="submit">Sign Up</button>
+                    <button class="button" type="reset">Reset</button> <br><br>
+                </div>
+            </form>
+            <a href="index.html"><button class="button">Back To Login In</button></a>
+            
+        </div>
 
         <footer>
             Copyright &copy 2022 Emoji Mayhem. All right reserved.

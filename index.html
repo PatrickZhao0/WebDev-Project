@@ -15,38 +15,57 @@
     <!--End CSS-->
  
     <style>
-      .login_container{
-          display: grid;
-          justify-content: center;
+      .container{
+        background-color: aliceblue;
+        margin-top: 5%;
+        margin-left: 33%;
+        margin-right: 33%;
+        padding-top: 3%;
+        padding-bottom: 6%;
+        text-align: center;
+        border-radius: 6px;
       }
+
+      #login{
+        padding-bottom: 5%;
+      }
+
+      #loginButton{
+        background-color: rgb(69, 69, 210);
+        color: aliceblue;
+        border-color: rgb(69, 69, 210);
+        border-radius: 100px;
+        width: 14cm;
+      }
+
     </style>
   </head>
 
   <body>
 
     <div>
-      <div class="login_container vertical-center">
-        <h1>Log In</h1>
+      <div class="container">
+        <h1 id="login">Log In</h1>
         <form action="login.php" method="post">
 
           <div>
-            <label for="username">Username:</label>
-            <input type="text" placeholder="patrick123" name="username" required/>
+            <!-- <label for="username">Username:</label><br> -->
+            <input type="text" placeholder="Username" name="username" size="60" required/>
           </div>
           <br/>
 
           <div>
-            <label for="password">Password:</label>
-            <input type="password" placeholder="Minimum 6 Characters Required" name="password"  required/>
+            <!-- <label for="password">Password:</label><br> -->
+            <input type="password" placeholder="Password" name="password" size="60"  required/>
           </div>
           <br />
 
           <div>
-            <input class="button" type="submit"></input>
-            <input class="button" type="reset"></input>
+            <button class="button" type="submit" id="loginButton">Login</button><br><br>
+            <button class="button" type="reset" id="loginButton">Reset</button>
           </div>
         </form>
-
+        <br>
         <h2>Don't Have an Account?</h2>
         <a href="signup.html" style="text-align: center;"><button class="button">Sign Up</button></a>
       </div>

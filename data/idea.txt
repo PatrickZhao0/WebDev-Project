@@ -1,0 +1,23 @@
+todo:
+
+nav alex 
+nav responsive alex 
+nav background alex 
+footer alex 
+shopping cart css alex
+search css alex 
+gerneral responsive alex
+
+
+JS total patrick
+
+signup php before  
+login php before
+
+search php after
+game general errors
+
+extras: 
+
+music player
+nav onhover

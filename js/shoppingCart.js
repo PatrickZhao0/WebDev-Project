@@ -36,21 +36,20 @@ function validate(){
         if (input.value == "" || input.value == null){
             input.focus();
             input.style.backgroundColor = "#CBCBCB";
-            alert("Fields are Empty")
-            empty = true;
-        }
-        if (empty) return;
-        if (tel.value.length != 9){
-            alert("Phone number should be 9 digits");
+            alert("Fields are Empty");
             return;
         }
-        if (zip.value.length != 5){
-            alert("Zip code should be 5 digit");
-            return;
-        }
-        if (email.value.indexOf(".") == -1 || email.value.indexOf("@") == -1){
-            alert("Your email address is missing '@' or '.'");
-            return;
-        }
+    }
+    if (email.value.indexOf(".") == -1 || email.value.indexOf("@") == -1){
+        alert("Your email address is missing '@' or '.'");
+        return;
+    }
+    if (tel.value.length != 9){
+        alert("Phone number should be 9 digits");
+        return;
+    }
+    if (zip.value.length != 5){
+        alert("Zip code should be 5 digit");
+        return;
     }
 }

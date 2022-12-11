@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    grid-template-areas: "column1 column2";
+}
+
+.column1{
+    grid-area: column1;
+    text-align:left;
+    padding-top: 4cm;
+    padding-left: 6cm;
+}
+
+.column2{
+    grid-area: column2;
+    padding-top: 4.5cm;
+    padding-left: 7cm;
+}
+
+.container2{
+    display: grid;
+    grid-template-areas: "column1-2 column2-2";
+}
+
+.column1-2{
+    grid-area: column1-2;
+}
+
+.column2-2{
+    grid-area: column2-2;
+    padding-right: 6cm;
+}

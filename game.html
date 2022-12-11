@@ -14,7 +14,6 @@
         <!--CSS File-->
         <link rel="stylesheet" href="css/style.css" />
         <!--End CSS-->
-
     <style>
         .slide-left-right {
             animation: slide-left-right infinite 5s linear forwards;
@@ -36,25 +35,7 @@
         }
     </style>
       
-    <script>
-        var emojiElements = document.getElementById("element2");
-        var emojisInitial = "😎";
-        var emojiCount = 5;
-        
-        function addEmojis(){
-        for (var i = 0; i < emojiCount; i++){
-        var newEmoji = document.createElement("p");
-        newEmoji.innerText = "😎";
-        emojiElements.appendChild(newEmoji);
-            
-        }
-        emojiCount += 5;
-        }
-        
-        addEmojis();
-        
-        setInterval(addEmojis,5000);
-    </script>
+
     </head>
 
     <!--Navbar-->
@@ -142,8 +123,6 @@
                 😎
             </p>
         </div>
-
-        <button onclick="game" id="start">Start</button>
 
         <div class="radio_station">
             <button class="last_song" style="padding: 0; border: 0; background-color: transparent;">&#9194</button>

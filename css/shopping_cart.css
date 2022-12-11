@@ -1,0 +1,40 @@
+.check_out{
+    background-color: aliceblue;
+    margin-left: 4%;
+    margin-right:4%;
+    border-radius: 10px;
+  }
+
+  .payment_info{
+    text-align: left;
+    margin-left: 38%;
+    display: flex;
+    justify-content: start;
+  }
+
+  .names{
+    display: flex;
+    grid-template-columns: auto auto;
+  }
+
+  .names-1{
+    margin-left: 8%;
+  }
+
+  .creditcard{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .creditcard-1{
+    margin-left: 9%;
+  }
+
+  .address{
+    display: flex;
+    grid-template-columns: auto auto;
+  }
+
+  .adress-1{
+    margin-left: 9%;
+  }

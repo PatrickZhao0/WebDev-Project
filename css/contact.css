@@ -6,16 +6,16 @@
 .column1{
     grid-area: column1;
     text-align:left;
-    padding-top: 4cm;
-    padding-left: 6cm;
+    margin-top: 20vh;
+    margin-left: 6vw;
 }
 
 .column2{
     grid-area: column2;
     display: flex;
     justify-content: start;
-    padding-top: 4.5cm;
-    padding-left: 7cm;
+    margin-top: 20vh;
+    margin-left: 6vw;
 }
 
 .container2{
@@ -29,5 +29,32 @@
 
 .column2-2{
     grid-area: column2-2;
-    padding-right: 6cm;
+    padding-right: 6vw;
+}
+
+h1{
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        grid-template-areas: "column1"
+                             "column2";
+    }
+    
+    h1{
+        text-align: center;
+    }
+    .column2{
+        display: flex;
+        justify-content: center;
+        margin-top: 18px;
+    }
+    .column1{
+        margin-top: 5vh;
+        
+    }
+    p{
+        text-align: center;
+    }
 }

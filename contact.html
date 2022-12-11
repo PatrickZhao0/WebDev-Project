@@ -13,6 +13,7 @@
 
         <!--CSS File-->
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/contact.css" />
         <!--End CSS-->
 
     </head>
@@ -29,24 +30,41 @@
 
     <body>
         <!--We can change the h2 context later-->
-        <h1>
-            Contact Us
-        </h1>
-        <form action="login.php" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" name="name" required><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" required><br>
-
-            <label for="comments">Comments:</label><br>
-            <textarea name="comments" rows="10" cols="50" style="resize:none;" required></textarea>
-
-            <div>
-                <button class="button" type="submit">Submit</button>
-                <button class="button" type="reset">Reset</button>
+        
+        <div class="container">
+            <div class="column1">
+                <h1 style="text-align:left">
+                    Contact Us
+                </h1>
+                <p>Feel free to contact us with any concerns you have! Thank You</p>
             </div>
-        </form>
+            <div class="column2">
+                <form action="login.php" method="post">
+                    <div class="container2">
+                        <div class="column1-2">
+                            <label for="name">First Name:</label><br>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="column2-2">
+                            <label for="name">Last Name:</label><br>
+                            <input type="text" name="name" required><br><br>
+                        </div>
+                    </div>
+
+                    <label for="email" cols="66">Email:</label><br>
+                    <input type="email" name="email" size="46" required><br><br>
+        
+                    <label for="comments">Comments:</label><br>
+                    <textarea name="comments" rows="10" cols="45" style="resize:none;" required></textarea>
+        
+                    <div>
+                        <button class="button" type="submit">Submit</button>
+                        <button class="button" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
 
         <footer>
             Copyright &copy 2022 Emoji Mayhem. All right reserved.

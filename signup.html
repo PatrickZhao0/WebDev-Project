@@ -17,49 +17,70 @@
     </head>
 
     <style>
-        .signup_container{
-            display: grid;
-            justify-content: center;
+        .container{
+          background-color: aliceblue;
+          margin-top: 5%;
+          margin-left: 33%;
+          margin-right: 33%;
+          padding-top: 3%;
+          padding-bottom: 6%;
+          text-align: center;
+          border-radius: 6px;
         }
-    </style>
+  
+        #login{
+          padding-bottom: 5%;
+        }
+  
+        #loginButton{
+          background-color: rgb(69, 69, 210);
+          color: aliceblue;
+          border-color: rgb(69, 69, 210);
+          border-radius: 100px;
+          width: 14cm;
+        }
+  
+      </style>
 
     <body>
         <!--We can change the h2 context later-->
-        <h1>
-            Sign Up
-        </h1>
 
-        <div class="signup_container">
+        <div class="container">
+            <h1 id="login">
+                Sign Up
+            </h1>
             <form action="sign_up.php" method="post">
                 <div>
-                    <label for="username">Username:</label>
-                    <input type="text" placeholder="patrick123" name="username" required>
+                    <!--<label for="username">Username:</label>-->
+                    <input type="text" placeholder="Username" name="username" size="60" required>
                 </div>
                 <br>
     
                 <div>
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="123@gmail.com" name="email" required>
+                    <!--<label for="email">Email:</label>-->
+                    <input type="email" placeholder="Email" name="email" size="60" required>
                 </div>
                <br>
     
                 <div>
-                    <label for="password">Password:</label>
-                    <input type="password" placeholder="Minimum 6 Characters Required" name="password" required>
+                    <!--<label for="password">Password:</label>-->
+                    <input type="password" placeholder="Password Minimum 6 Characters Required" name="password" size="60" required>
                 </div>
                 <br>
     
                 <div>
-                    <label for="confirmpassword">Confirm Password:</label>
-                    <input type="password" placeholder="Enter Password Again" name="confirmpassword" required>
+                    <!--<label for="confirmpassword">Confirm Password:</label>-->
+                    <input type="password" placeholder="Enter Password Again" name="confirmpassword" size="60" required>
                 </div>
                 <br>
     
                 <div>
-                    <button class="button" type="submit">Sign Up</button>
-                    <button class="button" type="reset">Reset</button> <br><br>
+                    <button class="button" id="loginButton" type="submit">Sign Up</button><br><br>
+                    <button class="button" id="loginButton" type="reset">Reset</button> <br><br>
                 </div>
             </form>
+            <br>
+            
             <a href="index.html"><button class="button">Back To Login In</button></a>
             
         </div>

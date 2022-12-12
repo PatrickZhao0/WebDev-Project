@@ -17,6 +17,23 @@
 
     </head>
 
+    <style>
+
+#loginButton{
+        background-color: rgb(69, 69, 210);
+        color: aliceblue;
+        border-color: rgb(69, 69, 210);
+        border-radius: 100px;
+        width: 28vw;
+      }
+
+      #loginButton:hover{
+        background-color: #8A4FFF;
+        border-color: #8A4FFF;
+      }
+
+    </style>
+
     <body>
 
         <nav>
@@ -28,14 +45,26 @@
         </nav>
 
         <h1>Emoji Mayhem</h1>
-        <button class="button"><a href="game.html">Start Game</a></button>
+        
+        <h2>Rules</h2>
+        <p>
+            1. Press Starts to begin the game <br>
+            2. To win the game, find the emoji that is different from the others <br>
+            3. Your reaction speed will be timed, and the result will shows the in end <br>
+            4. Good luck!
+        </p>
+        <div class="bgcolor">
+            <button class="startbutton" id="loginButton" style="color:white"> <a href="game.html">Start Game</a></button>
 
-        <div class="radio_station">
+            
+        </div>
+
+   <!--      <div class="radio_station">
             <button class="last_song" style="padding: 0; border: 0; background-color: transparent;">&#9194</button>
             <button class="stop_song" style="padding: 0; border: 0; background-color: transparent;">⏯️</button>
             <button class="next_song" style="padding: 0; border: 0; background-color: transparent;">&#9193</button>
         </div>
-
+ -->
         <footer>
             Copyright &copy 2022 Emoji Mayhem. All right reserved.
         </footer>

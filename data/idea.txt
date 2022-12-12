@@ -1,6 +1,8 @@
 todo:
 
 
+make start game button font color white - not sure why it isn't working alex 
+
 nav responsive alex 
 nav hamburger when responsive
 

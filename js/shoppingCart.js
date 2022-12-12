@@ -1,13 +1,12 @@
-let quantities = document.querySelectorAll(".product_qauntity");
+let quantities = document.querySelectorAll(".product_quantity");
 let unitPrices = document.querySelectorAll(".unitPrice");
 let subtotals = document.querySelectorAll(".subtotal");
-let total = document.querySelector(".total");
+let total = document.querySelector("#total");
 let inputs = document.forms[0].elements;
 let tel = inputs[3];
 let email = inputs[2];
 let zip = inputs[7];
 
-console.log(document.forms[0]);
 
 document.forms[0].addEventListener("submit", function(e){
     e.preventDefault();
@@ -15,17 +14,18 @@ document.forms[0].addEventListener("submit", function(e){
 });
 
 for(let quantity of quantities){
-    console.log(quantity);
     quantity.addEventListener("change", calcTotal);
 }
 
 
 
 function calcTotal(){
+    console.log("calcTotal();");
     let tempTotal = 0;
     for(let item = 0; item < quantities.length; item ++){
         subtotals[item].value = quantities[item].value * unitPrices[item].value;
-        tempTotal += subtotals[item].value;
+        tempTotal += parseInt(subtotals[item].value);
+        console.log(tempTotal.value);
     }
     total.value = tempTotal;
 }

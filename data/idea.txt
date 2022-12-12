@@ -35,3 +35,11 @@ nav onhover
         background-color: #8A4FFF;
         border-color: #8A4FFF;
       }
+
+footer {
+            position: fixed;
+            left: 0;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            }

@@ -1,15 +1,13 @@
 todo:
 
-nav font bolder
+
 nav responsive alex 
 nav hamburger when responsive
-nav background or some effect alex 
+
 footer, make footwer farther away from gamecontainer
 shopping cart css alex
 search css alex 
 gerneral responsive alex
-
-JS total patrick
 
 powerpoint slides before 
 signup php before  
@@ -20,6 +18,7 @@ game general errors
 
 extras: 
 music player
+<<<<<<< HEAD
 nav onhover
 
 
@@ -35,3 +34,6 @@ nav onhover
         background-color: #8A4FFF;
         border-color: #8A4FFF;
       }
+=======
+nav background or some effect alex 
+>>>>>>> 5950982ce859407423abf1511ca89c2f53614200

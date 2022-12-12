@@ -21,3 +21,17 @@ game general errors
 extras: 
 music player
 nav onhover
+
+
+#loginButton{
+        background-color: rgb(69, 69, 210);
+        color: aliceblue;
+        border-color: rgb(69, 69, 210);
+        border-radius: 100px;
+        width: 28vw;
+      }
+
+      #loginButton:hover{
+        background-color: #8A4FFF;
+        border-color: #8A4FFF;
+      }

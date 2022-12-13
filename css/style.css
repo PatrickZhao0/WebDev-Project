@@ -122,27 +122,33 @@
   }
   
   
-  ul {
-    width: auto;
-    float: right;
-    margin-top: 8px;
+  nav{
+    margin: 0 0 0 0;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+  gap: 1rem;
+}
+
+ul {
+  width: auto;
+  float: left;
+  margin-top: 8px;
+}
+li {
+  display: inline-block;
+  padding: 15px 30px;
+}
+a{
     text-decoration: none;
-  }
-  li {
-    display: inline-block;
-    padding: 15px 30px;
-  }
-  
-  nav {
-    display: inline-block;
-    position: sticky;
-    top: 0;
-  }
-  
-  a{
-    color: #8A4FFF;
-    text-decoration: none;
-  }
+    font-size: 1em;
+    
+}
+a:hover{
+    font-size: 105%;
+    font-weight: 900;
+}
+
 
   .center{
     text-align: center;

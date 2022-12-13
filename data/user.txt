@@ -1,0 +1,3 @@
+patrick:owner1;bz2099@nyu.edu
+nordy:owner2;sc8081@nyu.edu
+Alex:owner3;aah683@nyu.edu

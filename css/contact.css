@@ -15,34 +15,27 @@
 .column1{
     grid-area: column1;
     text-align:left;
-    padding-top: 7vw;
+    padding-top: 100px;
 }
 
 .column2{
-    border-radius: 10px;
-    background-color: aliceblue;
-    padding-left:6vw;
+    padding-left:8vw;
     padding-top:1vw;
     padding-bottom:1vw;
     grid-area: column2;
     display: flex;
     justify-content: start;
-    margin-left: 6vw;
+    margin-left: 10vw;
 
 }
 
 .container2{
-    display: grid;
-    grid-template-areas: "column1-2 column2-2";
-}
-
-.column1-2{
-    grid-area: column1-2;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .column2-2{
-    grid-area: column2-2;
-    padding-right: 6vw;
+    margin-left: 7px;
 }
 
 h1{
@@ -62,9 +55,15 @@ h1{
     }
     .column1{
         margin-top: 5vh;
-        
+        padding-top: 1px;
     }
     p{
         text-align: left;
+    }
+    .inputVal{
+        width: 50vw;
+    }
+    .column2-2{
+        margin-left: 0;
     }
 }

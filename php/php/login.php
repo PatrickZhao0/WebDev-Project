@@ -16,28 +16,31 @@
        <?php
         $username = $_POST['username'];
         $password = $_POST['password'];
-        $line = $username . ":" . $password . ";" . $email;
-        $file = fopen("../data/user.text", "r");
+        $line = $username . ":" . $password;
+        $file = fopen("../data/user.txt", "r") or die("errors openning or reading from file");
         $flag = false;
-
+        
+        
         while(!(feof($file))){
             $fline = fgets($file);
-            $fline =rtrim($fline);
+            $fline = rtrim($fline);
             $credential = explode(";", $fline);
-
             if($line == $credential[0]){
                 fclose($file);
                 echo "<script>location.replace('../start_game.html');</script>";
-            }else{
-                fclose($file);
-                echo "<script>
-                alert('Your Username or Password is invalid. Try Again!');
-                setTimeout(function(){
-                    location.replace('../index.html');
-                }, 2000);
-                </script>";
+                break;
             }
         }
+
+        fclose($file);
+        echo "<script>
+        alert('Your Username or Password is invalid. Try Again!');
+        setTimeout(function(){
+            location.replace('../index.html');
+        }, 2000);
+        </script>";
+        
+        
         
     ?>
     </body>

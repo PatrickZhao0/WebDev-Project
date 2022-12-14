@@ -41,8 +41,8 @@
             $password = $_POST['password'];
             $line = $username . ":" . $password . ";" . $email . "\n";
 
-            $file = fopen("../data/user.text", "a");
-
+            echo $line;
+            $file = fopen("../data/user.txt", "a");
             fwrite($file, $line);
             fclose($file);
         ?>

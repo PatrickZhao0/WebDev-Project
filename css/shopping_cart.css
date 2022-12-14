@@ -7,8 +7,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 18%;
-    padding-right: 18%;
     padding-bottom: 5%;
 }
 
@@ -22,6 +20,15 @@
     border-left-style: hidden;
     border-bottom-style: hidden;
 }
+
+.quant{
+  background-color: #9973e65f ;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
 .product_name{
     font-size:1cm;
 }

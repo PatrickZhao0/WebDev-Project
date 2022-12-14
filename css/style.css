@@ -150,14 +150,27 @@ a:hover{
 }
 
 
-  .center{
-    text-align: center;
-  }
+.center{
+  text-align: center;
+}
 
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#loginButton{
+  background-color: rgb(69, 69, 210);
+  color: aliceblue;
+  border-color: rgb(69, 69, 210);
+  border-radius: 100px;
+  width: 28vw;
+}
+
+#loginButton:hover{
+  background-color: #8A4FFF;
+  border-color: #8A4FFF;
+}

@@ -21,12 +21,21 @@
     </head>
 
     <script>
- 
+        let display = false;
+
+        function show(){
+          if (display){
+            document.querySelector(".playlistcontainer").style.display = "none";
+            document.querySelector(".playbutton").textContent = "Show Playlist";
+            display = false;
+          }else{
+            document.querySelector(".playlistcontainer").style.display = "block";
+            document.querySelector(".playbutton").textContent = "Hide Playlist";
+            display = true;
+          }
+        }
     </script>
     <style>
-
-  
-
 
 
 #loginButton{
@@ -50,7 +59,7 @@
                 height: 225px;
                 overflow-x: hidden;
                 overflow-y: auto;
-                display:block;
+                display:none;
    }
       
 
@@ -69,7 +78,7 @@
           </nav>
   
         <h1>Emoji Mayhem</h1>
-        <h1 class="animate__animated animate__pulse animate__infinite">🐶 🐮 🔴 🐧 🕯 ♓️ 👂 📎 😉 🚮</h1>
+        <h1 class="animate__animated animate__pulse animate__infinite" style="font-size: 70px;">🐶 🐮 🔴 🐧 🕯 ♓️ 👂 📎 😉 🚮</h1>
        
 
         <div class="center"> 
@@ -81,7 +90,8 @@
         </p>
         
         <div class="bgcolor">
-            <button class="startbutton" id="loginButton"> <a href="game.html" style="color: aliceblue;">Start Game</a></button>
+            <button class="startbutton" id="loginButton"> <a href="game.html" style="color: aliceblue;">Start Game</a></button><br><br>
+            <button class="playbutton" id="loginButton" onclick="show()">Show Playlist</button>
 
 
    <div class="playlistcontainer">
@@ -160,12 +170,6 @@
                                 
     </div>
 
-   <!--      <div class="radio_station">
-            <button class="last_song" style="padding: 0; border: 0; background-color: transparent;">&#9194</button>
-            <button class="stop_song" style="padding: 0; border: 0; background-color: transparent;">⏯️</button>
-            <button class="next_song" style="padding: 0; border: 0; background-color: transparent;">&#9193</button>
-        </div>
- -->
         <footer>
             Copyright &copy 2022 Emoji Mayhem. All right reserved.
         </footer>

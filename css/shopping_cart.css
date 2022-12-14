@@ -73,9 +73,15 @@
     margin-left: 2vw;
   }
 
-@media screen and (max-width: 800px) {
-    .check_out, .payment_info{
-        margin-left: 25vw;
-        margin-right: 25vw;
-    }
+@media screen and (max-width: 900px) {
+  .check_out{
+    margin-left: 1vw;
+    margin-right:1vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .check_out{
+    margin-left: 2vw;
+    margin-right:2vw;
+  }
 }

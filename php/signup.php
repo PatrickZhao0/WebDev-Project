@@ -40,11 +40,9 @@
             $email = $_POST['email'];
             $password = $_POST['password'];
             $line = $username . ":" . $password . ";" . $email . "\n";
-
-            echo $line;
-            $file = fopen("../data/user.txt", "a");
+            $file = fopen('../data/user.txt', "a");
             fwrite($file, $line);
-            fclose($file);
+            fclose($file);  
         ?>
 
         <footer style="text-align: center; margin-top: 10px;">Copyright &copy 2022 Emoji Mayhem. All right reserved.</footer>

@@ -31,6 +31,8 @@
             $address = $_POST['address'];
             $zip = $_POST['zip'];
 
+            echo $fname;
+
             $line = $fname . ":" . $lname . ":" . $email . ":" . $phone . ":" . $credit . ":" . $sec_code . ":" . $address . ":" . $zip . ":" . "\n";
             $file = fopen('../data/clients.txt', "a");
             fwrite($file, $line);
@@ -38,4 +40,3 @@
         ?>
     </body>
 </html>
-    

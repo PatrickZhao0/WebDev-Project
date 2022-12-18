@@ -35,27 +35,34 @@
         
                 switch ($input) {
                   case 'unicorn':
+                    case 'unicorns':
                     echo "<h1>🦄 Unicorns are $10</h1>";
                     break;
                   case 'ice man':
-                    echo "<h1>🥶 Ice Man are $7</h1>";
+                    echo "<h1>🥶 Ice Man is $7</h1>";
                     break;
                   case 'angel':
+                    case 'angels':
                     echo "<h1>😇 Angels are $5</h1>";
                     break;
                     case 'hammer':
+                      case 'hammers':
                       echo "<h1>🔨 Hammers are $5</h1>";
                       break;
                     case 'cherries':
+                      case 'cherry':
                       echo "<h1>🍒 Cherries are $3</h1>";
                       break;
                       case 'pizza':
-                        echo "<h1> 🍕 Pizzas are $2</h1>";
+                        case 'pizzas':
+                        echo "<h1> 🍕 Pizza is $2</h1>";
                         break;
                         case 'cd':
+                          case 'cds':
                           echo "<h1>📀 CDs are $8</h1>";
                           break;
                           case 'speaker':
+                            case 'speakers':
                             echo "<h1>🔊 Speakers are $9</h1>";
                             break;
                   default:

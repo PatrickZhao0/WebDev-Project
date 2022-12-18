@@ -28,25 +28,41 @@
 
           <?php
             $input = $_GET['input'];
+            $input = strtolower($input);
             $file = fopen("../data/emoji.txt", "r") or die("errors openning or reading from file");
             $flag = false;
-            
-            while(!(feof($file))){
-                $fline = fgets($file);
-                $fline = rtrim($fline);
-                
-                $credential = explode(":", $fline);
-                if($input == $credential[0]){
-                    fclose($file);
-                    echo "";
+        
+                switch ($input) {
+                  case 'unicorn':
+                    echo "<h1>🦄 Unicorns are $10</h1>";
                     break;
-                }
+                  case 'ice man':
+                    echo "<h1>🥶 Ice Man are $7</h1>";
+                    break;
+                  case 'angel':
+                    echo "<h1>😇 Angels are $5</h1>";
+                    break;
+                    case 'hammer':
+                      echo "<h1>🔨 Hammers are $5</h1>";
+                      break;
+                    case 'cherries':
+                      echo "<h1>🍒 Cherries are $3</h1>";
+                      break;
+                      case 'pizza':
+                        echo "<h1> 🍕 Pizzas are $2</h1>";
+                        break;
+                        case 'cd':
+                          echo "<h1>📀 CDs are $8</h1>";
+                          break;
+                          case 'speaker':
+                            echo "<h1>🔊 Speakers are $9</h1>";
+                            break;
+                  default:
+                    echo "<h1>🥲 Sorry, Item Not Exist! Try Again</h1>";
             }
 
             fclose($file);
-            echo "<img>🥲</img>";
-            echo "<p>Sorry, Item Not Exist! Try Again</p>"
-
+            
            ?>
   
 

@@ -9,8 +9,8 @@ let zip = inputs[7];
 
 
 document.forms[0].addEventListener("submit", function(e){
-    e.preventDefault();
-    validate();
+    if (validate() == true) e.preventDefault();
+    console.log(validate());
 });
 
 for(let quantity of quantities){
@@ -37,19 +37,20 @@ function validate(){
             input.focus();
             input.style.backgroundColor = "#CBCBCB";
             alert("Fields are Empty");
-            return;
+            return true;
         }
     }
     if (email.value.indexOf(".") == -1 || email.value.indexOf("@") == -1){
         alert("Your email address is missing '@' or '.'");
-        return;
+        return true;
     }
     if (tel.value.length != 9){
         alert("Phone number should be 9 digits");
-        return;
+        return true;
     }
     if (zip.value.length != 5){
         alert("Zip code should be 5 digit");
-        return;
+        return true;
     }
+    return false;
 }

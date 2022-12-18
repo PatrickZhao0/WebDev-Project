@@ -29,6 +29,7 @@
           <?php
             $input = $_GET['input'];
             $input = strtolower($input);
+            $input = trim($input);
             $file = fopen("../data/emoji.txt", "r") or die("errors openning or reading from file");
             $flag = false;
         

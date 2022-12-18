@@ -21,6 +21,14 @@
                  <li><a href="../index.html">Log Out 🚪🚶</a></li>
             </ul>
         </nav>
+
+        <h1>
+            All Your Payment Information Has Been Received
+        </h1>
+        <h1 style="font-size: 10vw; margin-top: 5vh; margin-bottom: 5vh;">✅</h1>
+
+        <a href="../shopping_cart.html" style="display: flex; justify-content: center;"><button class="button">Back To Shopping Cart</button></a>
+
         <?php
             $fname = $_POST['fname'];
             $lname = $_POST['lname'];
@@ -31,12 +39,12 @@
             $address = $_POST['address'];
             $zip = $_POST['zip'];
 
-            echo $fname;
-
             $line = $fname . ":" . $lname . ":" . $email . ":" . $phone . ":" . $credit . ":" . $sec_code . ":" . $address . ":" . $zip . ":" . "\n";
             $file = fopen('../data/clients.txt', "a");
             fwrite($file, $line);
             fclose($file);  
+
+
         ?>
     </body>
 </html>

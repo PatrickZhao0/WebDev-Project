@@ -64,7 +64,8 @@
             fclose($file);
             
            ?>
-  
+              <h1 class="animate__animated animate__pulse animate__infinite" style="font-size: 70px;">🍩 💁 🌸 🐹 🕡 🐕 🔡 🚮 💇 ⚓️</h1>
+
 
           <div style="display: flex; justify-content: center;">
             <a href="../shopping_cart.html" style="text-align: center;"><button  id="loginButton" class="button">Go to Shop</button></a>

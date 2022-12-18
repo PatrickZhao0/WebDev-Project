@@ -42,7 +42,7 @@
             $line = $username . ":" . $password . ";" . $email . "\n";
             $file = fopen('../data/user.txt', "a");
             fwrite($file, $line);
-            fclose($file);  
+            fclose($file);
         ?>
 
         <footer style="text-align: center; margin-top: 10px;">Copyright &copy 2022 Emoji Mayhem. All right reserved.</footer>

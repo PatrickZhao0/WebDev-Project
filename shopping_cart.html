@@ -133,57 +133,58 @@
 
         <h1>Payment Information</h1>
 
-
-        <div class="check_out" style="margin-bottom: 10px;">
-            <div class="payment_info">
-                <form action="product.php" method="post">
-                    <div class="names">
-                        <div>
-                            <label for="fname">First Name:</label><br>
-                            <input type="text" name="fname"> <br>
+        <form action="products.php" method="get">
+            <div class="check_out" style="margin-bottom: 10px;">
+                <div class="payment_info">
+                    <form action="product.php" method="post">
+                        <div class="names">
+                            <div>
+                                <label for="fname">First Name:</label><br>
+                                <input type="text" name="fname"> <br>
+                            </div>
+                            <div class="names-1">
+                                <label for="lname">Last Name:</label><br>
+                                <input type="text" name="lname"> <br>
+                            </div>        
                         </div>
-                        <div class="names-1">
-                            <label for="lname">Last Name:</label><br>
-                            <input type="text" name="lname"> <br>
-                        </div>        
-                    </div>
-
-                    <label for="email">Email:</label><br>
-                    <input type="text" name="email" size="50"> <br>
     
-                    <label for="phone">Phone:</label><br>
-                    <input type="tel" name="phone" size="50"> <br>
-                    
-                    <div class="creditcard">
-                        <div>
-                            <label for="credit">Credit Number:</label><br>
-                            <input type="number" name="credit">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" size="45">
+        
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" size="50">
+                        
+                        <div class="creditcard">
+                            <div>
+                                <label for="credit">Credit Number:</label><br>
+                                <input type="number" name="credit">
+                            </div>
+                            <div class="creditcard-1">
+                                <label for="sec_code">Security Code:</label><br>
+                                <input type="number" name="sec_code"> <br>
+                            </div>
                         </div>
-                        <div class="creditcard-1">
-                            <label for="sec_code">Security Code:</label><br>
-                            <input type="number" name="sec_code"> <br>
+    
+                        <div class="address">
+                            <div>
+                                <label for="address">Address:</label><br>
+                                <input type="text" name="address"><br>
+                            </div>
+                            <div class="adress-1">
+                                <label for="zip">Zipcode:</label><br>
+                                <input type="number" name="zip" width="100"> <br>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="address">
-                        <div>
-                            <label for="address">Address:</label><br>
-                            <input type="text" name="address"><br>
-                        </div>
-                        <div class="adress-1">
-                            <label for="zip">Zipcode:</label><br>
-                            <input type="number" name="zip" width="100"> <br>
-                        </div>
-                    </div>
-
-                    <br>
-                    <input type="submit" class="button" value="Check Out" id="loginButton" style="width: 10vw; min-width: 132px;">
-                    <input type="reset" class="button" value="Reset" id="loginButton" style="width: 10vw; min-width: 132px;">
-                    <br>
-                </form>
-            </div>
-        </div>
-
+    
+                        <br>
+                        <input type="submit" class="button" value="Check Out" id="loginButton" style="width: 10vw; min-width: 132px;"><br>
+                        <input type="reset" class="button" value="Reset" id="loginButton" style="width: 10vw; min-width: 132px;">
+                        <br>
+                    </form>
+                </div>
+            </div>    
+        </form>
+        
         
 
         <footer style="position: relative; margin-top: 5px;">

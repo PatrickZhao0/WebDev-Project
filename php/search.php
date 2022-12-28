@@ -19,7 +19,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="../start_game.html">Play 🕹️ </a></li>
-              <li><a href="../search.html">Search Emoji 🔎 </a></li>
+              <li><a href="../search.html">Search Emoji🔎 </a></li>
               <li><a href="../shopping_cart.html">Shopping Cart 🛒 </a></li>
                  <li><a href="../contact.html">Contact Us 📞</a></li>
                  <li><a href="../index.html">Log Out 🚪🚶</a></li>
